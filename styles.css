@@ -1,97 +1,157 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: rgb(10,10,10);
-    color: rgb(240,240,240);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-header {
-    width: 95%;
-    max-width: 788px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 12px;
-    margin-top: 15px;
-}
-
-.share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(240,240,240);
-}
-
-.share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
-    color: rgb(0,0,0);
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 16px;
 }
 
 .container {
-    width: 91%;
-    max-width: 680px;
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h1 {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(240,240,240);
-}
-
-.tile {
     width: 100%;
-    background-color: rgb(37,37,37);
-    margin: 7px;
-    border-radius: 17px;
-    display: flex;
-    justify-content: space-between;
+    max-width: 480px;
 }
 
-.tile:hover {
-    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
-    transform: scale(1.02);
-}
-
-.tile-share-button {
-    margin: 8px;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(52,52,52);
-}
-
-.tile-share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
-}
-
-
+/* Profile photo */
 .image-container {
-    height: 96px;
-    width: 96px;
-    border-radius: 48px;
-    overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .image-container img {
-    height: 100%;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #444;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.bio {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Social icon row */
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.08);
+}
+
+.social-icon img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #555;
+}
+
+.social-icon span {
+    color: #aaaaaa;
+    font-size: 0.7rem;
+    text-align: center;
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #333;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+/* Link tiles */
+.tile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.2s, transform 0.1s;
+    position: relative;
+}
+
+.tile:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.01);
 }
 
 .icon {
-    margin: 4px 8px;
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.tile p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    margin-right: 32px;
 }
