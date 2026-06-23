@@ -203,3 +203,12 @@ h1 {
     color: #5a3e6b;
     margin-right: 32px;
 }
+
+/* Fix upside-down profile photo */
+.image-container img {
+    transform: rotate(180deg);
+}
+
+.social-icon:first-child img {
+    transform: rotate(180deg);
+}
