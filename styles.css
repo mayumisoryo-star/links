@@ -226,15 +226,16 @@ h1 {
     font-size: 0.82rem;
     font-weight: 800;
     letter-spacing: 1.5px;
-    margin: 6px 0 14px;
+    margin: 6px 0 26px;
 }
 
 /* Reel-cover deal grid */
 .deal-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 40px 10px;
     width: 100%;
+    padding-top: 26px;
 }
 
 .deal-card {
@@ -242,7 +243,6 @@ h1 {
     display: block;
     aspect-ratio: 3 / 4;
     border-radius: 16px;
-    overflow: hidden;
     text-decoration: none;
     border: 2px solid rgba(255, 255, 255, 0.85);
     box-shadow: 0 4px 16px rgba(180, 140, 210, 0.18);
@@ -265,6 +265,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
 .cover img {
@@ -288,8 +290,8 @@ h1 {
 /* Cute sticker badge */
 .sticker {
     position: absolute;
-    top: 7px;
-    right: 7px;
+    bottom: calc(100% + 6px);
+    left: 50%;
     padding: 4px 9px;
     border-radius: 999px;
     font-size: 0.6rem;
@@ -298,32 +300,16 @@ h1 {
     color: #5a3e6b;
     border: 2.5px solid #ffffff;
     box-shadow: 0 3px 8px rgba(0,0,0,0.16);
-    transform: rotate(6deg);
+    transform: translateX(-50%);
     white-space: nowrap;
+    z-index: 2;
 }
 
 .sticker-pink,
 .sticker-green,
 .sticker-lilac,
 .sticker-peach,
-.sticker-yellow { background: #ffffff; top: 40px; }
-
-.pill-off {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    padding: 4px 9px;
-    border-radius: 999px;
-    font-size: 0.6rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-    background: #9b6bb5;
-    border: 2.5px solid #ffffff;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.16);
-    transform: rotate(6deg);
-    white-space: nowrap;
-}
+.sticker-yellow { background: #ffffff; }
 
 /* Brand label scrim */
 .deal-label {
@@ -334,6 +320,7 @@ h1 {
     padding: 22px 8px 8px;
     background: linear-gradient(to top, rgba(90, 62, 107, 0.55), transparent);
     text-align: center;
+    border-radius: 0 0 14px 14px;
 }
 
 .deal-off {
