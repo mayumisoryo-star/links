@@ -13,11 +13,12 @@ body {
     display: flex;
     justify-content: center;
     background: linear-gradient(135deg,
-        #ffd6e0 0%,
-        #ffecb3 25%,
-        #c8f0d8 50%,
-        #c5e3f7 75%,
-        #e8d5f5 100%);
+        #ffe28f 0%,
+        #ffecb3 14%,
+        #c8f0d8 36%,
+        #c5e3f7 58%,
+        #e8d5f5 79%,
+        #ffd6e0 100%);
     background-size: 400% 400%;
     animation: gradientShift 12s ease infinite;
 }
@@ -301,11 +302,28 @@ h1 {
     white-space: nowrap;
 }
 
-.sticker-pink   { background: #ffb8cc; }
-.sticker-green  { background: #a8e6c4; }
-.sticker-lilac  { background: #d8bef0; }
-.sticker-peach  { background: #ffd9a8; }
-.sticker-yellow { background: #ffe9a3; }
+.sticker-pink,
+.sticker-green,
+.sticker-lilac,
+.sticker-peach,
+.sticker-yellow { background: #ffffff; top: 40px; }
+
+.pill-off {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background: #9b6bb5;
+    border: 2.5px solid #ffffff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.16);
+    transform: rotate(6deg);
+    white-space: nowrap;
+}
 
 /* Brand label scrim */
 .deal-label {
