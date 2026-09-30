@@ -286,6 +286,15 @@ h1 {
 .cover-perk        { background: linear-gradient(160deg, #e8d5f5, #ffd6e0); }
 .cover-tabletalks  { background: linear-gradient(160deg, #ffecb3, #ffd6e0); }
 .cover-saffron     { background: linear-gradient(160deg, #ffecb3, #c8f0d8); }
+.cover-rugbytots   { background: linear-gradient(160deg, #c5e3f7, #c8f0d8); }
+
+.deal-note {
+    color: #7a6080;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 22px 8px 0;
+}
 
 /* Cute sticker badge */
 .sticker {
